@@ -1,0 +1,33 @@
+#add your own ssid
+id=my_SSID
+#uuid is automatically generated
+uuid=
+type=wifi
+#change to your user instead of my_user
+permissions=user:my_user:;
+
+[wifi]
+mac-address-blacklist=
+mode=infrastructure
+ssid=ETS-Campus
+
+[wifi-security]
+key-mgmt=wpa-eap
+
+[802-1x]
+eap=peap;
+#add your id
+identity=am00000
+#add your password with
+#password=mypassword
+password-flags=1
+phase2-auth=mschapv2
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+method=auto
